@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import { Formik, Form, Field } from 'formik';
 
 import styled from 'styled-components';
@@ -54,4 +56,9 @@ export const FormLabel = ({ handleSubmit }) => {
             </Forma>
         </Formik>
     )
+}
+
+FormLabel.propTypes = {
+    handleSubmit: PropTypes.func.isRequired,
+    
 }

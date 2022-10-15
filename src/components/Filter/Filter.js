@@ -5,8 +5,7 @@ import { Label, Input } from './Filter.styled';
 
 export const Filter = ({ filter, filterContact }) => {
  
-    console.log(filterContact);
-
+   
   return (
     <Label>
       Find contacts by name
@@ -23,7 +22,7 @@ export const Filter = ({ filter, filterContact }) => {
   );
 };
 
-Label.propTypes = {
+Filter.propTypes = {
     filter: PropTypes.string.isRequired,
     filterContact: PropTypes.func.isRequired,
 };
